@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Kawan! Selamat datang diKatik!</p>
+    </header>
+
+    <main>
+        <section class="selection-content">
+            <button id="triangle-btn" type="button" class="selection-btn pink-color">Segitiga</button>
+            <button id="parallelogram-btn" type="button" class="selection-btn lightskyblue-color">Jajar Genjang</button>
+        </section>
+        <form id="triangle-form">
+        <section id="triangle-section" class="calc-section" style="display: none;">
+            <header>
+                <h1 class="calc-header">Luas dan Keliling Segitiga</h1>
+            </header>
+
+            <article class="calc-content">
+                <div class="calc-img">
+                    <img src="segitiga.png" alt="segitiga">
+                </div>
+                <p>Rumus Luas Segitiga Sama Kaki: <b>1/2 x alas x tinggi</b></p>
+                <p>Rumus Keliling Segitiga Sama Kaki: <b>jumlah seluruh sisinya</b></p>
+            </article>
+            
+                <input id="ac" type="number" placeholder="masukkan nilai AC"/>
+                <input id="bc" type="number" placeholder="masukkan nilai BC"/>
+
+                Hasil Keliling: <span id="hasil Keli"></span>
+                </br>
+                  <input id="alas" type="number" placeholder="masukkan nilai AC"/>
+                  <input id="tinggi" type="number" placeholder="masukkan nilai BO"/>
+                </button>
+                    Hasil Luas : <span id="hasil Luas"></span> 
+                <br>
+                <button type="button" onclick="segitiga()">Hitung </br>
+
+                </section>
+
+         <section id="parallelogram-section" class="calc-section" style="display: none;"></section>
+        <header>
+           <h1 class="calc-header">Luas dan Keliling Jajar Genjang</h1>
+            </header>
+            <article class="calc-content">
+                <div class="calc-img">
+                    <img src="https://cilacapklik.com/wp-content/uploads/2021/08/Rumus-Luas-Jajar-Genjang.jpg" alt="jajar-genjang">
+                </div>
+                <p>Rumus Luas jajar Genjang: <b>alas x tinggi</b></p>
+                <p>Rumus Keliling Jajar Gebjang: <b>2 x (alas + sisi miring)</b></p>
+            </article>
+            <hr />
+            <form id="jajar-genjang">
+
+                <input id="alas-jjrgjg" type="number" required placeholder="masukkan nilai alas" />
+                <input id="tinggi-jjrgjg" type="number" required placeholder="masukkan nilai tinggi" />
+                <input id="miring-jjrgjg" type="number" required placeholder="masukkan nilai miring"/>
+                <button type="button" onclick="calculateParallelogram()">Hitung</button>
+                <p id="parallelogram-result">Hasil Perhitungan</p>
+            </form>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
